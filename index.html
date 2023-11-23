@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahaweli Authority Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #8e44ad, #2980b9);
+            color: #fff;
+        }
+
+        header {
+           
+            text-align: center;
+        }
+
+        section {
+          
+            text-align: center;
+        }
+
+        .card_one {
+            background: #cfffd5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            margin: auto;
+            text-align: left;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            margin: auto;
+            text-align: left;
+        }
+
+        button {
+           border-radius: 15px;
+           background-color: #8e44ad;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.5s ease;
+            width:100%;
+        }
+        h3,p,h2{
+        color: black;
+      
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>CIRCUIT BUNGALOWS OF MASL <br> SYSTEM B</h1>
+        <!-- User Card -->
+
+
+        <div class="card">
+            <h2>Ruhunuketha</h2>
+            <h2>(Mr.Ranjith)</h2>
+            <p style="color: gray;">Circuit Keeper </p>
+        
+            <p>Call Mobile Line 01: <span id="cp_mobile_line1">078-4502728</span></p>
+            <p>Call Mobile Line 02: <span id="cp_mobile_line2">077-6459085</span></p>
+        
+            <!-- Buttons -->
+         
+            <button onclick="callNumber('cp_mobile_line1')">Call Mobile Line 01</button>
+            <button onclick="callNumber('cp_mobile_line2')">Call Mobile Line 02</button>
+        
+
+            <script>
+                function callNumber(number, isMobile = false) {
+                    var prefix = isMobile ? 'tel:' : 'tel:';
+                    window.location.href = prefix + document.getElementById(number).textContent;
+                }
+            </script>
+        </div>
+        <hr>
+
+
+        
+        <div class="card">
+            <h2>Pimburaththawa</h2>
+            <h2>(Mr. Sumanadasa/</h2>
+            <h2>Mr. Priyantha)</h2>
+            <p style="color: gray;">Circuit Keeper </p>
+        
+            <p>Mr. Sumanadasa: <span id="cp_mobile_line3">071-5421334</span></p>
+            <p>Mr. Priyantha: <span id="cp_mobile_line4">071-2760586</span></p>
+        
+            <!-- Buttons -->
+         
+            <button onclick="callNumber('cp_mobile_line3')">Call Mr. Sumanadasa</button>
+            <button onclick="callNumber('cp_mobile_line4')">Call Mr. Priyantha</button>
+        
+
+            <script>
+                function callNumber(number, isMobile = false) {
+                    var prefix = isMobile ? 'tel:' : 'tel:';
+                    window.location.href = prefix + document.getElementById(number).textContent;
+                }
+            </script>
+        </div>
+        <hr>
+
+
+
+        <!-- More content goes here -->
+        <footer>
+            <p style="color: white;">Developmet & Publish by Department of IT - Sri lanka Mahaweli Aithority </p>
+        </footer>
+    </section>
+</body>
+</html>
