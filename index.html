@@ -94,14 +94,17 @@
             font-size: x-small;
             color: gray;
         }
+        .st2{
+            color: gray;
+        }
        
     </style>
 </head>
 <body>
 
-     <h3 style="text-align: center;"><b>Circuit Bangalow</b><br>Ruhunuketha</h3>
+    
     <div class="contact-container">
-
+        <h3 style="text-align:center;"><b>CIRCUIT BANGALOW</b><br><span class="st2">RUHUNUKETHA</span></h3>
         <div class="contact-card">
             <div class="contact-details">
                 <div class="contact-image-container">
@@ -133,9 +136,60 @@
 
         <!-- Add another card below -->
        
-       
+        <h3 style="text-align:center;"><b>CIRCUIT BANGALOW</b><br><span class="st2">PIBURATHTHAWA</span></h3>
+        <div class="contact-card">
+            <div class="contact-details">
+                <div class="contact-image-container">
+                    <img class="contact-image" src="one.jpg" alt="Profile Image">
+                </div>
+                <div>
+                    <div class="name">Mr. Sumanadasa<br>
+                        <span class="disgnation">Circuit Keeper (Pimburaththawa)</span><br>
+                        <p>
+                         Mobile : <span id="cbp_mobile">071-5421334</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-buttons">
+                <button class="call-button" onclick="callNumber('cbp_mobile')">Call Mobile</button>
+              
+            </div>
+            <script>
+                function callNumber(number, isMobile = false) {
+                    var prefix = isMobile ? 'tel:' : 'tel:';
+                    window.location.href = prefix + document.getElementById(number).textContent;
+                }
+            </script>
+        </div>
     
-
+        
+        <div class="contact-card">
+            <div class="contact-details">
+                <div class="contact-image-container">
+                    <img class="contact-image" src="one.jpg" alt="Profile Image">
+                </div>
+                <div>
+                    <div class="name">Mr. Priyantha<br>
+                        <span class="disgnation">Circuit Keeper (Pimburaththawa)</span><br>
+                        <p>
+                         Mobile : <span id="cbp2_mobile">'071-2760586</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-buttons">
+                <button class="call-button" onclick="callNumber('cbp2_mobile')">Call Mobile</button>
+              
+            </div>
+            <script>
+                function callNumber(number, isMobile = false) {
+                    var prefix = isMobile ? 'tel:' : 'tel:';
+                    window.location.href = prefix + document.getElementById(number).textContent;
+                }
+            </script>
+        </div>
+    
 
 
 
